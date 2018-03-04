@@ -6,10 +6,23 @@
 	</head>
 	<body>
 
-		<form method="post">
+		<form action="" method="get">
+ <!text in form -->
+     user id : <input type="text" name="user id" value="suthesan" disabled/><br/>
 
-     user id : <input type="text" name="user id"/><br/>
+	<label for="fName">Firstname:</label>
+		<input type="text" name="fName" pattern="[a-zA-Z]*" id="fName" required>
+		<label for="lName">Lastname:</label>
+			<input type="texfloat:left;t" name="lName" pattern="[a-zA-Z]*" id="lName" required autofocus><br/>
 
+    <!---phoneNumber--->
+
+		<label for="phoneNumber">Phonenumber:</label>
+		<input type="text" name="phoneNumber" pattern="[0-9]{10}" value="" required ><br/>
+		<label for="dOB">DOB:</label>
+		<input type="date" name="DOB" value="" id="dOB" required checked>
+		<input type="submit" name="submit" value="submit the form">
+		<br/>
 		</form>
 	</body>
 </html>
